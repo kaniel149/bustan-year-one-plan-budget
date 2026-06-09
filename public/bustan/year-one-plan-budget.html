@@ -1,0 +1,1678 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="תקציר שנה ראשונה לבוסתן אנרג׳י: תוכנית עבודה, תקציב חודשי, עלות הקמה, קאפקס ראשוני ותזרים מול חתימת חוזים והכנסות."
+    />
+    <title>Bustan Energy | תוכנית שנה ראשונה ותקציב</title>
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700;800;900&family=Heebo:wght@400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #27342f;
+        --basalt: #24463e;
+        --paper: #f4ead8;
+        --shell: #fff4e2;
+        --wash: #e4d5bd;
+        --teal: #008f8a;
+        --lagoon: #006f6b;
+        --coral: #b94436;
+        --olive: #657452;
+        --sun: #f2b84b;
+        --sky: #d8ece8;
+        --line: rgba(39, 52, 47, 0.16);
+        --line-strong: rgba(39, 52, 47, 0.28);
+        --soft-line: rgba(255, 244, 226, 0.72);
+        --shadow: 0 22px 70px rgba(39, 52, 47, 0.18);
+        --soft-shadow: 0 12px 30px rgba(39, 52, 47, 0.08);
+        --mono: "Azeret Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --sans: "Heebo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: var(--sans);
+        font-weight: 650;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.48;
+        background:
+          radial-gradient(circle at 18% 16%, rgba(216, 236, 232, 0.8), transparent 26%),
+          linear-gradient(135deg, rgba(255, 244, 226, 0.95), rgba(244, 234, 216, 0.75));
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid var(--sun);
+        outline-offset: 4px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .shell {
+        width: min(1250px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 12px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 12px auto 0;
+        padding: 10px 12px;
+        border: 1px solid var(--soft-line);
+        background: rgba(255, 244, 226, 0.9);
+        box-shadow: 0 16px 44px rgba(39, 52, 47, 0.11);
+        backdrop-filter: blur(18px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 214px;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 132px;
+        height: auto;
+        display: block;
+      }
+
+      .brand span {
+        color: rgba(39, 52, 47, 0.66);
+        font-size: 12px;
+        line-height: 1.15;
+        font-weight: 850;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .nav a {
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 11px;
+        border: 1px solid rgba(39, 52, 47, 0.16);
+        border-radius: 4px;
+        background: rgba(255, 253, 247, 0.72);
+        color: rgba(39, 52, 47, 0.74);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 950;
+      }
+
+      .hero {
+        position: relative;
+        min-height: calc(100svh - 82px);
+        display: grid;
+        align-items: end;
+        margin-top: 14px;
+        overflow: hidden;
+        color: var(--shell);
+        background:
+          linear-gradient(90deg, rgba(28, 42, 36, 0.9) 0%, rgba(28, 42, 36, 0.72) 42%, rgba(28, 42, 36, 0.18) 100%),
+          url("bustan-solar-site-survey-real.png") center / cover no-repeat;
+        box-shadow: var(--shadow);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 8px;
+        background: linear-gradient(90deg, var(--teal), var(--sun), var(--coral));
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        width: min(1180px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: clamp(64px, 8vw, 118px) 0 68px;
+      }
+
+      .eyebrow,
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        min-height: 32px;
+        padding: 7px 10px;
+        border-radius: 3px;
+        background: var(--sun);
+        color: var(--ink);
+        font-family: var(--mono);
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 900;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin-top: 18px;
+        font-size: clamp(48px, 8.3vw, 116px);
+        line-height: 0.92;
+        font-weight: 1000;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin-top: 22px;
+        color: rgba(255, 244, 226, 0.88);
+        font-size: clamp(19px, 2.3vw, 30px);
+        line-height: 1.35;
+        font-weight: 760;
+      }
+
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 34px;
+        max-width: 980px;
+      }
+
+      .hero-metric {
+        min-height: 132px;
+        padding: 15px;
+        border: 1px solid rgba(255, 244, 226, 0.3);
+        background: rgba(255, 244, 226, 0.12);
+        backdrop-filter: blur(10px);
+      }
+
+      .hero-metric b {
+        display: block;
+        direction: ltr;
+        color: var(--sun);
+        font-size: clamp(28px, 4.2vw, 52px);
+        line-height: 0.96;
+        font-weight: 1000;
+      }
+
+      .hero-metric span {
+        display: block;
+        margin-top: 10px;
+        color: rgba(255, 244, 226, 0.78);
+        font-size: 14px;
+        line-height: 1.25;
+      }
+
+      .section {
+        padding: clamp(54px, 7vw, 92px) 0;
+      }
+
+      .section.alt {
+        background: rgba(255, 244, 226, 0.58);
+        border-block: 1px solid rgba(39, 52, 47, 0.1);
+      }
+
+      .section.dark {
+        color: var(--shell);
+        background: var(--basalt);
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(290px, 0.45fr);
+        gap: clamp(20px, 5vw, 60px);
+        align-items: end;
+        margin-bottom: 28px;
+      }
+
+      .kicker {
+        display: inline-flex;
+        margin-bottom: 14px;
+        color: var(--lagoon);
+        font-family: var(--mono);
+        font-size: 12px;
+        line-height: 1.1;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .dark .kicker {
+        color: var(--sun);
+      }
+
+      h2 {
+        max-width: 900px;
+        font-size: clamp(34px, 5.4vw, 76px);
+        line-height: 0.98;
+        font-weight: 1000;
+        letter-spacing: 0;
+      }
+
+      .section-note {
+        color: rgba(39, 52, 47, 0.72);
+        font-size: clamp(17px, 1.8vw, 23px);
+        line-height: 1.42;
+        font-weight: 700;
+      }
+
+      .dark .section-note {
+        color: rgba(255, 244, 226, 0.76);
+      }
+
+      .decision-band {
+        display: grid;
+        grid-template-columns: minmax(0, 0.84fr) minmax(310px, 0.5fr);
+        gap: 18px;
+        align-items: stretch;
+        margin-top: -28px;
+        margin-bottom: 16px;
+      }
+
+      .decision-copy {
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-top: 8px solid var(--teal);
+        background: rgba(255, 253, 247, 0.8);
+        box-shadow: var(--soft-shadow);
+      }
+
+      .decision-copy h2 {
+        font-size: clamp(30px, 3.6vw, 52px);
+      }
+
+      .decision-copy p {
+        margin-top: 12px;
+        color: rgba(39, 52, 47, 0.7);
+        font-size: 18px;
+        line-height: 1.45;
+      }
+
+      .ask-box {
+        display: grid;
+        align-content: center;
+        gap: 12px;
+        padding: 22px;
+        border: 1px solid rgba(242, 184, 75, 0.54);
+        background: #2d3f37;
+        color: var(--shell);
+        box-shadow: var(--soft-shadow);
+      }
+
+      .ask-box b {
+        direction: ltr;
+        color: var(--sun);
+        font-size: clamp(33px, 4.8vw, 64px);
+        line-height: 0.95;
+        font-weight: 1000;
+      }
+
+      .ask-box span {
+        color: rgba(255, 244, 226, 0.78);
+        font-size: 15px;
+        line-height: 1.32;
+      }
+
+      .phase-grid,
+      .summary-grid,
+      .capex-grid,
+      .gate-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .phase-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        margin-top: 18px;
+      }
+
+      .capex-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .gate-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .phase,
+      .summary,
+      .capex,
+      .gate {
+        border: 1px solid var(--line);
+        background: rgba(255, 253, 247, 0.76);
+        box-shadow: var(--soft-shadow);
+      }
+
+      .phase {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 318px;
+      }
+
+      .phase-head {
+        padding: 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .phase-head b {
+        display: block;
+        color: var(--lagoon);
+        font-family: var(--mono);
+        font-size: 13px;
+        font-weight: 900;
+        direction: ltr;
+      }
+
+      .phase-head h3 {
+        margin-top: 7px;
+        font-size: 24px;
+        line-height: 1.04;
+        font-weight: 1000;
+      }
+
+      .phase ul {
+        margin: 0;
+        padding: 16px 32px 10px 18px;
+        color: rgba(39, 52, 47, 0.72);
+        font-size: 15px;
+        line-height: 1.36;
+      }
+
+      .phase li + li {
+        margin-top: 8px;
+      }
+
+      .phase-foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid var(--line);
+      }
+
+      .phase-foot div {
+        padding: 12px 14px;
+      }
+
+      .phase-foot div + div {
+        border-inline-start: 1px solid var(--line);
+      }
+
+      .phase-foot b,
+      .summary b,
+      .capex b,
+      .gate b {
+        display: block;
+        direction: ltr;
+        font-size: 26px;
+        line-height: 1;
+        font-weight: 1000;
+      }
+
+      .phase-foot span,
+      .summary span,
+      .capex span,
+      .gate span {
+        display: block;
+        margin-top: 6px;
+        color: rgba(39, 52, 47, 0.62);
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 800;
+      }
+
+      .summary {
+        min-height: 132px;
+        padding: 15px;
+        border-top: 7px solid var(--teal);
+      }
+
+      .summary-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin-top: 12px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(39, 52, 47, 0.12);
+      }
+
+      .summary-detail span {
+        margin: 0;
+        color: rgba(39, 52, 47, 0.7);
+        font-family: var(--mono);
+        font-size: 10px;
+        line-height: 1.25;
+        font-weight: 900;
+        direction: ltr;
+      }
+
+      .summary-detail small {
+        display: block;
+        margin-top: 2px;
+        color: rgba(39, 52, 47, 0.56);
+        font-family: var(--sans);
+        font-size: 10px;
+        line-height: 1.15;
+        font-weight: 820;
+        direction: rtl;
+      }
+
+      .summary-footnote {
+        display: block;
+        margin-top: 10px;
+        color: rgba(39, 52, 47, 0.54);
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 850;
+      }
+
+      .summary:nth-child(2) {
+        border-top-color: var(--sun);
+      }
+
+      .summary:nth-child(3) {
+        border-top-color: var(--olive);
+      }
+
+      .summary:nth-child(4) {
+        border-top-color: var(--coral);
+      }
+
+      .summary:nth-child(5) {
+        border-top-color: var(--lagoon);
+      }
+
+      .summary:nth-child(6) {
+        border-top-color: var(--basalt);
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        background: rgba(255, 253, 247, 0.82);
+        box-shadow: var(--soft-shadow);
+      }
+
+      table {
+        width: 100%;
+        min-width: 1050px;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        padding: 12px 12px;
+        border-bottom: 1px solid rgba(39, 52, 47, 0.1);
+        text-align: right;
+        vertical-align: top;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #efe3cb;
+        color: rgba(39, 52, 47, 0.74);
+        font-size: 12px;
+        font-weight: 1000;
+      }
+
+      td {
+        color: rgba(39, 52, 47, 0.72);
+        font-weight: 720;
+      }
+
+      td strong {
+        color: var(--ink);
+        font-weight: 1000;
+      }
+
+      .num {
+        direction: ltr;
+        white-space: nowrap;
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .total-row td {
+        background: rgba(216, 236, 232, 0.42);
+        color: var(--ink);
+        font-weight: 1000;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .timeline-row {
+        display: grid;
+        grid-template-columns: 82px 1fr 96px;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .timeline-row b {
+        color: rgba(39, 52, 47, 0.72);
+        font-family: var(--mono);
+        font-size: 12px;
+        direction: ltr;
+      }
+
+      .bar-track {
+        height: 34px;
+        border: 1px solid rgba(39, 52, 47, 0.16);
+        background: rgba(255, 253, 247, 0.72);
+      }
+
+      .bar-fill {
+        height: 100%;
+        min-width: 4px;
+        background: linear-gradient(90deg, var(--lagoon), var(--teal));
+      }
+
+      .timeline-row:nth-child(2n) .bar-fill {
+        background: linear-gradient(90deg, var(--sun), var(--coral));
+      }
+
+      .timeline-row span {
+        color: rgba(39, 52, 47, 0.66);
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 900;
+        direction: ltr;
+      }
+
+      .capex {
+        min-height: 210px;
+        padding: 18px;
+        border-top: 7px solid var(--sun);
+      }
+
+      .capex h3,
+      .gate h3 {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 1.05;
+        font-weight: 1000;
+      }
+
+      .capex p,
+      .gate p {
+        color: rgba(39, 52, 47, 0.7);
+        font-size: 15px;
+        line-height: 1.38;
+      }
+
+      .capex .tag,
+      .gate .tag {
+        margin-top: 16px;
+        background: var(--sky);
+      }
+
+      .image-strip {
+        display: grid;
+        grid-template-columns: 0.72fr 1fr;
+        gap: 18px;
+        align-items: stretch;
+        margin-top: 18px;
+      }
+
+      .image-strip img {
+        width: 100%;
+        min-height: 420px;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border: 1px solid rgba(255, 244, 226, 0.16);
+      }
+
+      .dark .table-wrap {
+        border-color: rgba(255, 244, 226, 0.18);
+        background: rgba(255, 244, 226, 0.08);
+        box-shadow: none;
+      }
+
+      .dark table {
+        min-width: 980px;
+      }
+
+      .dark th {
+        background: #324940;
+        color: rgba(255, 244, 226, 0.78);
+      }
+
+      .dark td {
+        border-color: rgba(255, 244, 226, 0.12);
+        color: rgba(255, 244, 226, 0.74);
+      }
+
+      .dark td strong,
+      .dark .total-row td {
+        color: var(--shell);
+      }
+
+      .dark .total-row td {
+        background: rgba(242, 184, 75, 0.15);
+      }
+
+      .gate {
+        padding: 18px;
+        border-top: 7px solid var(--teal);
+      }
+
+      .source-note {
+        margin-top: 26px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(39, 52, 47, 0.14);
+        color: rgba(39, 52, 47, 0.58);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .footer {
+        padding: 26px 0 36px;
+        background: #1f332d;
+        color: rgba(255, 244, 226, 0.68);
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .footer img {
+        width: 126px;
+        height: auto;
+        display: block;
+        filter: brightness(1.08);
+      }
+
+      .footer p {
+        max-width: 760px;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      @media (max-width: 980px) {
+        .topbar,
+        .brand,
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .nav {
+          justify-content: flex-start;
+        }
+
+        .hero-metrics,
+        .phase-grid,
+        .summary-grid,
+        .capex-grid,
+        .gate-grid,
+        .decision-band,
+        .section-head,
+        .image-strip {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: 760px;
+          background-position: 62% center;
+        }
+
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .image-strip img {
+          min-height: 260px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .shell,
+        .hero-inner {
+          width: min(100% - 22px, 1250px);
+        }
+
+        .brand img {
+          width: 118px;
+        }
+
+        .brand {
+          min-width: 0;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .brand span {
+          display: none;
+        }
+
+        .nav a {
+          min-height: 34px;
+          padding: 0 9px;
+          white-space: nowrap;
+        }
+
+        .topbar {
+          gap: 8px;
+        }
+
+        .nav {
+          width: 100%;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          justify-content: flex-start;
+          padding-bottom: 2px;
+          scrollbar-width: thin;
+        }
+
+        h1 {
+          font-size: clamp(40px, 13vw, 58px);
+        }
+
+        .lead {
+          margin-top: 16px;
+          font-size: 17px;
+          line-height: 1.32;
+        }
+
+        .hero-metrics,
+        .summary-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+        }
+
+        .hero-inner {
+          padding: 34px 0 30px;
+        }
+
+        .hero-metrics {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 8px;
+          margin-top: 24px;
+        }
+
+        .hero-metric {
+          min-height: 92px;
+          padding: 10px;
+        }
+
+        .hero-metric b {
+          font-size: clamp(22px, 8vw, 31px);
+        }
+
+        .hero-metric span {
+          font-size: 11px;
+        }
+
+        .phase {
+          min-height: auto;
+        }
+
+        .timeline-row {
+          grid-template-columns: 68px 1fr 78px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .topbar {
+          position: static;
+          box-shadow: none;
+        }
+
+        .hero {
+          min-height: auto;
+          color: var(--ink);
+          background: #fff;
+          box-shadow: none;
+        }
+
+        .hero-inner {
+          padding: 28px 0;
+        }
+
+        .lead,
+        .hero-metric span {
+          color: rgba(39, 52, 47, 0.72);
+        }
+
+        .hero-metric {
+          background: #fff;
+          border-color: var(--line);
+        }
+
+        .hero-metric b {
+          color: var(--lagoon);
+        }
+
+        .section {
+          padding: 28px 0;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar shell">
+      <a class="brand" href="./" aria-label="Bustan Energy asset index">
+        <img src="bustan-energy-logo.png" alt="Bustan Energy" />
+        <span>Year-one operating plan<br />Internal planning memo</span>
+      </a>
+      <nav class="nav" aria-label="ניווט במסמך">
+        <a href="#workplan">תוכנית עבודה</a>
+        <a href="#budget">תקציב חודשי</a>
+        <a href="#capex">הקמה וקאפקס</a>
+        <a href="#cashflow">חוזים והכנסות</a>
+        <a href="#decisions">החלטות</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="תקציר מנהלים">
+        <div class="hero-inner">
+          <span class="eyebrow">Bustan Energy · Year 1 · Working model</span>
+          <h1>שנה ראשונה: עבודה, תקציב, וחוזים שמחזיקים את התזרים.</h1>
+          <p class="lead">
+            תקציר קצר מתוך חומרי האינדקס: מה עושים ב־12 חודשים, כמה כסף צריך לפי חודשים, ואיך עלות ההקמה והקאפקס הראשוני
+            עומדים מול חתימת חוזים, הכנסות וגבייה.
+          </p>
+          <div class="hero-metrics" aria-label="מדדי שנה ראשונה">
+            <div class="hero-metric">
+              <b>70-85M</b>
+              <span>THB הכנסות שנה ראשונה בתרחיש הבסיס מהדק הקיים.</span>
+            </div>
+            <div class="hero-metric">
+              <b>4-9M</b>
+              <span>THB setup וקאפקס ראשוני לפני מלאי פרויקטלי כבד.</span>
+            </div>
+            <div class="hero-metric">
+              <b>10-14M</b>
+              <span>THB מסגרת working capital נפרדת לתזמון ציוד, מקדמות וגבייה.</span>
+            </div>
+            <div class="hero-metric">
+              <b>8-10</b>
+              <span>אנשי core team בסוף שנה; צוותי התקנה כבדים נשארים קבלני משנה.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="shell">
+          <div class="decision-band">
+            <div class="decision-copy">
+              <span class="kicker">Board ask</span>
+              <h2>החלטה מבוקשת: לאשר תקציב 90 יום ומסגרת הון חוזר.</h2>
+              <p>
+                התקציב לא אמור לממן חלום גדול או גיוס מהיר מדי. הוא אמור להפעיל מכונה שכבר נבנתה: חברה, צוות ליבה,
+                CRM/Solar OS קיים, ספקים, רכב, כלים, מלאי בסיסי, 2-3 פיילוטים וסגירת חוזים שמתחילים להחזיר מזומן.
+              </p>
+            </div>
+            <aside class="ask-box" aria-label="החלטת תקציב">
+              <span class="tag">Decision</span>
+              <b>6.3M + 10-14M</b>
+              <span>תרחיש בסיס: כ־6.3M THB setup/capex פרוס בעיקר בחודשים 1-4, ועוד 10-14M THB line להון חוזר לפי קצב חתימות וגבייה.</span>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workplan">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="kicker">01 · Work plan</span>
+              <h2>תוכנית עבודה לשנה ראשונה.</h2>
+            </div>
+            <p class="section-note">
+              המהלך בנוי כרצף ביצוע שמרני: קודם תשתית וצוות קטן, אחר כך פיילוטים וסגירות, ואז scale רק כשה־pipeline והגבייה אמיתיים.
+              עבודות התקנה כבדות יושבות ב־COGS דרך קבלני משנה, לא בתוך payroll.
+            </p>
+          </div>
+
+          <div class="phase-grid">
+            <article class="phase">
+              <div class="phase-head">
+                <b>M1-M3</b>
+                <h3>הקמה ופיילוטים</h3>
+              </div>
+              <ul>
+                <li>רישום חברה, חשבונאות, legal, work permits וקובץ BOI/ESCO ראשוני.</li>
+                <li>הפעלת ה־CRM/Solar OS שכבר נבנה: data cleanup, מחירוני ספקים, quote desk ותהליך Lead-to-O&M.</li>
+                <li>3-4 אנשי ליבה בלבד: founder/GM, sales/ops, survey/PM ו־admin/finance חלקי.</li>
+                <li>מהנדס מורשה, חשמלאים וצוות התקנה נכנסים כקבלני משנה לפי פרויקט.</li>
+                <li>בחירת 3 rooftops ראשונים: וילה, resort/commercial, warehouse/workshop.</li>
+              </ul>
+              <div class="phase-foot">
+                <div><b>7.6M</b><span>THB חוזים חתומים יעד</span></div>
+                <div><b>2.2M</b><span>THB גבייה / הכנסה</span></div>
+              </div>
+            </article>
+
+            <article class="phase">
+              <div class="phase-head">
+                <b>M4-M6</b>
+                <h3>מכירות וביצוע ראשון</h3>
+              </div>
+              <ul>
+                <li>10-15 הצעות בחודש עם bill, roof, owner, margin ו־next action.</li>
+                <li>2-4 התקנות ראשונות, commissioning, תמונות, handover ו־O&M offer.</li>
+                <li>עלייה ל־4-6 אנשי core team בלבד; קיבוע 1-2 קבלני משנה תאילנדים מורשים.</li>
+                <li>יצירת referral loop: בעל נכס, property manager, חשמלאים וקבלני בנייה.</li>
+              </ul>
+              <div class="phase-foot">
+                <div><b>22.5M</b><span>THB חוזים חתומים יעד</span></div>
+                <div><b>13.6M</b><span>THB גבייה / הכנסה</span></div>
+              </div>
+            </article>
+
+            <article class="phase">
+              <div class="phase-head">
+                <b>M7-M9</b>
+              <h3>קבלני משנה ו־O&M desk</h3>
+              </div>
+              <ul>
+                <li>עלייה ל־6-8 אנשי core: sales, ops/PM, finance/admin, field tech ו־O&M coordinator.</li>
+                <li>לא בונים שני crews פנימיים; משתמשים ב־subcontract crews לפי חוזים חתומים.</li>
+                <li>סטנדרטיזציה של BOM, safety checklist, warranty file ודוח ביצועים חודשי.</li>
+                <li>הכנסת monitoring לכל מערכת חדשה ו־service contract כבר בהצעה.</li>
+                <li>פתיחת microgrid anchor LOI רק אחרי שיש evidence מפרויקטים קטנים.</li>
+              </ul>
+              <div class="phase-foot">
+                <div><b>32.5M</b><span>THB חוזים חתומים יעד</span></div>
+                <div><b>22.4M</b><span>THB גבייה / הכנסה</span></div>
+              </div>
+            </article>
+
+            <article class="phase">
+              <div class="phase-head">
+                <b>M10-M12</b>
+                <h3>סקייל מבוקר</h3>
+              </div>
+              <ul>
+                <li>8-10 אנשי core בסוף שנה; second service vehicle רק אם יש cash collection שמצדיק.</li>
+                <li>יעד שנה: 2.5MWp rooftop ו־0.8MWh battery חתום/מנוהל.</li>
+                <li>20-35 התקנות או נכסים תחת תהליך, עם 20+ נכסים ב־monitoring/O&M.</li>
+                <li>Solar field / SPV נשאר development בלבד עד שיש land option + offtaker route.</li>
+              </ul>
+              <div class="phase-foot">
+                <div><b>40.0M</b><span>THB חוזים חתומים יעד</span></div>
+                <div><b>33.7M</b><span>THB גבייה / הכנסה</span></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="summary-grid" aria-label="סיכום שנה">
+            <div class="summary"><b>102.6M</b><span>THB חוזים חתומים בתרחיש בסיס</span></div>
+            <div class="summary"><b>71.9M</b><span>THB גבייה / הכנסה בשנה</span></div>
+            <div class="summary"><b>21M</b><span>THB gross profit משוער אחרי COGS</span></div>
+            <div class="summary"><b>18.4M</b><span>THB operating cost לפני setup; קבלני התקנה ב־COGS</span></div>
+            <div class="summary"><b>6.3M</b><span>THB setup/capex ראשוני</span></div>
+            <div class="summary"><b>~4M</b><span>THB פער תזרים אפשרי לפני קו WC</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="budget">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="kicker">02 · Monthly budget</span>
+              <h2>תקציב לפי חודשים: שכר, שיווק, תפעול, קאפקס ופרויקטים.</h2>
+            </div>
+            <p class="section-note">
+              כל הסכומים במיליוני THB. זה תרחיש בסיס שמתרגם את הטווחים הקיימים לתקציב חודשי: payroll עולה רק עם visibility,
+              ושיווק/CRM נשארים מדידים סביב leads, surveys ו־signed contracts. אין כאן בנייה מחדש של CRM, אלא הפעלה, התאמות ודאטה.
+            </p>
+          </div>
+
+          <div class="table-wrap">
+            <table aria-label="תקציב חודשי לשנה ראשונה">
+              <thead>
+                <tr>
+                  <th>חודש</th>
+                  <th>מוקד עבודה</th>
+                  <th>Payroll</th>
+                  <th>שיווק / CRM / תוכנה</th>
+                  <th>תפעול / Legal / לוגיסטיקה</th>
+                  <th>Setup / Capex</th>
+                  <th>COGS / פרויקט</th>
+                  <th>Cash-out</th>
+                  <th>חוזים חתומים</th>
+                  <th>גבייה / הכנסה</th>
+                  <th>פער חודשי</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>M1</strong></td>
+                  <td>Company, activate existing CRM, suppliers, first lead list; 3-person core</td>
+                  <td class="num">0.35</td>
+                  <td class="num">0.25</td>
+                  <td class="num">0.57</td>
+                  <td class="num">2.20</td>
+                  <td class="num">0.00</td>
+                  <td class="num">3.37</td>
+                  <td class="num">0.40</td>
+                  <td class="num">0.20</td>
+                  <td class="num">-3.17</td>
+                </tr>
+                <tr>
+                  <td><strong>M2</strong></td>
+                  <td>Survey kits, paid/referral launch, 2 pilot quotes</td>
+                  <td class="num">0.40</td>
+                  <td class="num">0.30</td>
+                  <td class="num">0.51</td>
+                  <td class="num">1.60</td>
+                  <td class="num">0.40</td>
+                  <td class="num">3.21</td>
+                  <td class="num">2.20</td>
+                  <td class="num">0.60</td>
+                  <td class="num">-2.61</td>
+                </tr>
+                <tr>
+                  <td><strong>M3</strong></td>
+                  <td>3 pilots signed, deposits, BOI/ESCO pre-file</td>
+                  <td class="num">0.45</td>
+                  <td class="num">0.30</td>
+                  <td class="num">0.45</td>
+                  <td class="num">1.00</td>
+                  <td class="num">1.00</td>
+                  <td class="num">3.20</td>
+                  <td class="num">5.00</td>
+                  <td class="num">1.40</td>
+                  <td class="num">-1.80</td>
+                </tr>
+                <tr>
+                  <td><strong>M4</strong></td>
+                  <td>First installs, contractor crew, O&M offer</td>
+                  <td class="num">0.52</td>
+                  <td class="num">0.30</td>
+                  <td class="num">0.39</td>
+                  <td class="num">0.60</td>
+                  <td class="num">2.50</td>
+                  <td class="num">4.31</td>
+                  <td class="num">6.50</td>
+                  <td class="num">3.20</td>
+                  <td class="num">-1.11</td>
+                </tr>
+                <tr>
+                  <td><strong>M5</strong></td>
+                  <td>Installation rhythm, local proof, supplier terms</td>
+                  <td class="num">0.58</td>
+                  <td class="num">0.30</td>
+                  <td class="num">0.39</td>
+                  <td class="num">0.30</td>
+                  <td class="num">3.60</td>
+                  <td class="num">5.17</td>
+                  <td class="num">7.50</td>
+                  <td class="num">4.80</td>
+                  <td class="num">-0.37</td>
+                </tr>
+                <tr>
+                  <td><strong>M6</strong></td>
+                  <td>10-15 proposals/mo, O&M process starts</td>
+                  <td class="num">0.65</td>
+                  <td class="num">0.30</td>
+                  <td class="num">0.42</td>
+                  <td class="num">0.20</td>
+                  <td class="num">4.10</td>
+                  <td class="num">5.67</td>
+                  <td class="num">8.50</td>
+                  <td class="num">5.60</td>
+                  <td class="num">-0.07</td>
+                </tr>
+                <tr>
+                  <td><strong>M7</strong></td>
+                  <td>Contractor crews, monitoring reports, battery push</td>
+                  <td class="num">0.78</td>
+                  <td class="num">0.32</td>
+                  <td class="num">0.45</td>
+                  <td class="num">0.20</td>
+                  <td class="num">5.00</td>
+                  <td class="num">6.75</td>
+                  <td class="num">10.00</td>
+                  <td class="num">6.80</td>
+                  <td class="num">+0.05</td>
+                </tr>
+                <tr>
+                  <td><strong>M8</strong></td>
+                  <td>Resort/commercial accounts, case studies</td>
+                  <td class="num">0.85</td>
+                  <td class="num">0.32</td>
+                  <td class="num">0.45</td>
+                  <td class="num">0.10</td>
+                  <td class="num">5.20</td>
+                  <td class="num">6.92</td>
+                  <td class="num">10.50</td>
+                  <td class="num">7.20</td>
+                  <td class="num">+0.28</td>
+                </tr>
+                <tr>
+                  <td><strong>M9</strong></td>
+                  <td>Microgrid LOI, second vehicle only if collection holds</td>
+                  <td class="num">0.92</td>
+                  <td class="num">0.33</td>
+                  <td class="num">0.48</td>
+                  <td class="num">0.10</td>
+                  <td class="num">6.10</td>
+                  <td class="num">7.93</td>
+                  <td class="num">12.00</td>
+                  <td class="num">8.40</td>
+                  <td class="num">+0.47</td>
+                </tr>
+                <tr>
+                  <td><strong>M10</strong></td>
+                  <td>Samui corridor prep, premium SLA, finance file</td>
+                  <td class="num">1.05</td>
+                  <td class="num">0.34</td>
+                  <td class="num">0.51</td>
+                  <td class="num">0.00</td>
+                  <td class="num">6.70</td>
+                  <td class="num">8.60</td>
+                  <td class="num">12.00</td>
+                  <td class="num">9.20</td>
+                  <td class="num">+0.60</td>
+                </tr>
+                <tr>
+                  <td><strong>M11</strong></td>
+                  <td>Scale only where deposits and supply terms hold</td>
+                  <td class="num">1.15</td>
+                  <td class="num">0.37</td>
+                  <td class="num">0.51</td>
+                  <td class="num">0.00</td>
+                  <td class="num">7.60</td>
+                  <td class="num">9.63</td>
+                  <td class="num">13.50</td>
+                  <td class="num">10.50</td>
+                  <td class="num">+0.87</td>
+                </tr>
+                <tr>
+                  <td><strong>M12</strong></td>
+                  <td>Year close, O&M renewals, BOI evidence pack</td>
+                  <td class="num">1.25</td>
+                  <td class="num">0.37</td>
+                  <td class="num">0.54</td>
+                  <td class="num">0.00</td>
+                  <td class="num">9.00</td>
+                  <td class="num">11.16</td>
+                  <td class="num">14.50</td>
+                  <td class="num">14.00</td>
+                  <td class="num">+2.84</td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Total</strong></td>
+                  <td>Base year-one model with slower hiring</td>
+                  <td class="num">8.95</td>
+                  <td class="num">3.80</td>
+                  <td class="num">5.67</td>
+                  <td class="num">6.30</td>
+                  <td class="num">51.20</td>
+                  <td class="num">75.92</td>
+                  <td class="num">102.60</td>
+                  <td class="num">71.90</td>
+                  <td class="num">-4.02</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="summary-grid" aria-label="מעטפות תקציב שנתיות">
+            <div class="summary"><b>9.0M</b><span>Payroll שנתי שמרני; התקנה כבדה לא בפנים</span></div>
+            <div class="summary"><b>3.8M</b><span>Marketing, CRM operations, software</span></div>
+            <div class="summary">
+              <b>5.7M</b>
+              <span>Legal, office, vehicles, logistics</span>
+              <div class="summary-detail" aria-label="פירוט תפעול legal לוגיסטיקה">
+                <span>1.44M<small>Legal / permits</small></span>
+                <span>1.08M<small>משרד / מחסן</small></span>
+                <span>0.96M<small>רכב / דלק</small></span>
+                <span>0.81M<small>נסיעות / מעבורות</small></span>
+                <span>0.75M<small>ביטוח / אדמין</small></span>
+                <span>0.63M<small>ספקים / buffer</small></span>
+              </div>
+            </div>
+            <div class="summary">
+              <b>6.3M</b>
+              <span>Setup/capex ראשוני</span>
+              <div class="summary-detail" aria-label="פירוט setup capex">
+                <span>2.00M<small>BOS / spares</small></span>
+                <span>1.50M<small>כלים ומדידה</small></span>
+                <span>0.95M<small>מערכות ודוחות</small></span>
+                <span>0.90M<small>חברה / legal</small></span>
+                <span>0.60M<small>רכב ראשון</small></span>
+                <span>0.35M<small>משרד / מחסן</small></span>
+              </div>
+            </div>
+            <div class="summary"><b>51.2M</b><span>COGS / project cash paid</span></div>
+            <div class="summary">
+              <b>75.9M</b>
+              <span>Total cash-out לפני שיפור תנאי ספקים/לקוחות</span>
+              <div class="summary-detail" aria-label="פירוט total cash out">
+                <span>51.20M<small>פרויקטים / COGS</small></span>
+                <span>8.95M<small>Payroll</small></span>
+                <span>5.67M<small>תפעול / legal</small></span>
+                <span>6.30M<small>Setup / capex</small></span>
+                <span>3.80M<small>שיווק / CRM ops</small></span>
+              </div>
+              <small class="summary-footnote">זה סיכום חמש הקטגוריות, לא הוצאה נוספת.</small>
+            </div>
+          </div>
+
+          <div class="table-wrap" style="margin-top: 18px">
+            <table aria-label="פירוט הוצאות לפי קטגוריה">
+              <thead>
+                <tr>
+                  <th>קטגוריה</th>
+                  <th>תקציב שנה</th>
+                  <th>מה יוצא בפועל</th>
+                  <th>מה לא בפנים</th>
+                  <th>מתי מאשרים להגדיל</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Payroll</strong></td>
+                  <td class="num">8.95M THB</td>
+                  <td>3-4 אנשים בתחילת השנה; 4-6 סביב M4-M6; 6-8 סביב M7-M9; 8-10 בסוף שנה. כולל sales/ops, survey/PM, finance/admin, field tech ו־O&M coordinator.</td>
+                  <td>לא כולל crew התקנה מלא, לא כולל civil/roofing, לא כולל מהנדס מורשה full-time אם אין מספיק פרויקטים.</td>
+                  <td>רק אחרי deposits, לפחות 10 הצעות פעילות בחודש, וגבייה שמכסה שני חודשי payroll קדימה.</td>
+                </tr>
+                <tr>
+                  <td><strong>Marketing / CRM / software</strong></td>
+                  <td class="num">3.80M THB</td>
+                  <td>שיווק רזה: paid lead-gen קטן, referral incentives, field content, צילומי case study נקודתיים, landing pages, הפעלת CRM/Solar OS קיים, data hygiene, quote templates, dashboards, hosting ו־report design.</td>
+                  <td>לא כולל בנייה מחדש של CRM, לא כולל הבטחות חיסכון לא מתוקפות, ולא קמפיינים רחבים לפני שיש proof מקומי.</td>
+                  <td>להגדיל מעל 3.8M רק אם cost per qualified survey יורד, וה־CRM מראה מקור ליד, חשבון PEA, גג, owner ו־next action.</td>
+                </tr>
+                <tr>
+                  <td><strong>תפעול / Legal / לוגיסטיקה</strong></td>
+                  <td class="num">5.67M THB</td>
+                  <td>1.44M legal/accounting/work permits; 1.08M office/warehouse rent and utilities; 0.96M vehicle operations, fuel and service; 0.81M ferries, Bangkok/Samui travel and supplier visits; 0.75M insurance, telecom, banking, translation and admin; 0.63M local logistics and contingency.</td>
+                  <td>לא כולל ציוד PV עצמו ולא כולל CAPEX חד־פעמי של כלים/מלאי.</td>
+                  <td>רכב שני, משרד גדול יותר או מחסן נוסף רק אחרי backlog חתום שמצדיק עומס תפעולי ומייצר bottleneck אמיתי.</td>
+                </tr>
+                <tr>
+                  <td><strong>Setup / Capex</strong></td>
+                  <td class="num">6.30M THB</td>
+                  <td>2.0M מלאי BOS/spares; 1.5M כלים, PPE וציוד מדידה; 0.95M systems activation, תבניות ודוחות; 0.9M company/legal; 0.6M רכב ראשון; 0.35M משרד/מחסן.</td>
+                  <td>לא כולל מלאי panels גדול ולא כולל רכישת קרקע או Battery cabinets לפרויקט ספציפי.</td>
+                  <td>מוציאים בעיקר M1-M4. אחרי זה רק החלפות, ספיירים או כלי מדידה שמונע rework.</td>
+                </tr>
+                <tr>
+                  <td><strong>COGS / Project cash</strong></td>
+                  <td class="num">51.20M THB</td>
+                  <td>Panels, inverters, batteries, BOS, mounting, cables, protection, קבלני משנה, civil/lifting, freight/ferry, commissioning, permits ו־warranty reserve.</td>
+                  <td>לא operating burn. זו עלות שמותר להוציא רק מול חוזה, deposit ולוח תשלומים.</td>
+                  <td>כל PO גדול רק אחרי customer deposit או milestone ברור שמכסה supplier deposit.</td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Working capital line</strong></td>
+                  <td class="num">10-14M THB</td>
+                  <td>כרית תזרים לתזמון בין תשלום לספקים, shipment/ferry, milestone collection וגבייה מאוחרת.</td>
+                  <td>זו לא הוצאה מתוכננת. זה buffer כדי לא להיתקע אם פרויקט משלם באיחור.</td>
+                  <td>לפתוח בשלבים: 6M אחרי 3 חוזים, עוד 4M אחרי גבייה ראשונה, עוד 4M רק אם COGS מתגלגל מהר.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capex">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="kicker">03 · Setup and capex</span>
+              <h2>עלות הקמה וקאפקס ראשוני.</h2>
+            </div>
+            <p class="section-note">
+              הקאפקס הראשוני הוא לא CAPEX של שדה סולארי. זה סט הכלים שמאפשר לחברה למכור, לסקור, לבצע, לתעד ולתחזק בלי
+              להיתקע על דברים בסיסיים באי.
+            </p>
+          </div>
+
+          <div class="capex-grid">
+            <article class="capex">
+              <h3>חברה, רישוי ותשתית משרד</h3>
+              <b>1.3-2.4M</b>
+              <span>THB</span>
+              <p>Company setup, legal, accounting, work permits, office/warehouse deposits, insurance, documentation ו־BOI/ESCO pre-file.</p>
+              <span class="tag">חודשים 1-3</span>
+            </article>
+            <article class="capex">
+              <h3>רכבים, כלים ובטיחות</h3>
+              <b>1.7-3.0M</b>
+              <span>THB</span>
+              <p>Pickup deposit או קנייה חלקית, ladders, PPE, harnesses, torque tools, clamp/insulation testers וציוד commissioning בסיסי.</p>
+              <span class="tag">לא לחסוך במדידה</span>
+            </article>
+            <article class="capex">
+              <h3>מלאי בסיסי והפעלת מערכות</h3>
+              <b>1.9-3.8M</b>
+              <span>THB</span>
+              <p>BOS/spares, breakers, SPD, connectors, rails, monitoring dongles, spare inverter קטן, templates, dashboards והפעלת Solar OS קיים.</p>
+              <span class="tag">בלי מלאי panels כבד</span>
+            </article>
+          </div>
+
+          <div class="image-strip">
+            <img src="bustan-solar-battery-inverter-real.png" alt="ציוד סולארי, בטריות ואינוורטרים" />
+            <div class="table-wrap">
+              <table aria-label="פירוט setup וקאפקס">
+                <thead>
+                  <tr>
+                    <th>רכיב</th>
+                    <th>טווח מקור</th>
+                    <th>תרחיש בסיס במסמך</th>
+                    <th>החלטת ניהול</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Company / legal / accounting / permits</strong></td>
+                    <td class="num">0.6-1.2M</td>
+                    <td class="num">0.9M</td>
+                    <td>לסגור structure ויועצים מוקדם, לא למשוך רגולציה לסוף.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Office and warehouse</strong></td>
+                    <td class="num">0.2-0.5M</td>
+                    <td class="num">0.35M</td>
+                    <td>מחסן יבש פונקציונלי ליד route נוח, לא משרד יוקרתי.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vehicles</strong></td>
+                    <td class="num">0.3-0.8M deposits</td>
+                    <td class="num">0.6M</td>
+                    <td>רכב שירות אחד מייד; שני סביב M9-M12 לפי הכנסות.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tools, PPE, measurement</strong></td>
+                    <td class="num">1.1-2.2M</td>
+                    <td class="num">1.5M</td>
+                    <td>בטיחות ומדידה הם חלק מהמותג, לא nice to have.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Base inventory and spares</strong></td>
+                    <td class="num">1.5-3.0M</td>
+                    <td class="num">2.0M</td>
+                    <td>להחזיק BOS וספיירים, לא מלאי panels גדול לפני חוזים.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Systems activation / templates / dashboards</strong></td>
+                    <td class="num">0.6-1.5M</td>
+                    <td class="num">0.95M</td>
+                    <td>לא בונים CRM מחדש. התקציב מיועד לחיבור מחירונים, ניקוי דאטה, תבניות הצעה, דוחות ומעקב lead-to-contract.</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td><strong>Total setup / initial capex</strong></td>
+                    <td class="num">4.3-9.2M</td>
+                    <td class="num">6.3M</td>
+                    <td>להוציא בעיקר בחודשים 1-4, לפני הרחבת צוות כבדה.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="cashflow">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="kicker">04 · Contracts vs revenue</span>
+              <h2>חתימת חוזים והכנסות מול הוצאות.</h2>
+            </div>
+            <p class="section-note">
+              החתימה מקדימה את ההכנסה. לכן המדד הקריטי הוא לא רק revenue, אלא גם deposit discipline, תנאי ספקים, וקצב שבו
+              חוזים הופכים לגבייה אמיתית.
+            </p>
+          </div>
+
+          <div class="table-wrap">
+            <table aria-label="חוזים והכנסות לפי רבעון">
+              <thead>
+                <tr>
+                  <th>תקופה</th>
+                  <th>חוזים חתומים</th>
+                  <th>גבייה / הכנסה</th>
+                  <th>Project COGS paid</th>
+                  <th>Gross profit</th>
+                  <th>Operating burn</th>
+                  <th>Setup/capex</th>
+                  <th>Cash note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Q1</strong></td>
+                  <td class="num">7.6M</td>
+                  <td class="num">2.2M</td>
+                  <td class="num">1.4M</td>
+                  <td class="num">0.8M</td>
+                  <td class="num">3.58M</td>
+                  <td class="num">4.8M</td>
+                  <td>שלב setup כבד; core team קטן, קבלני משנה רק מול פרויקט.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q2</strong></td>
+                  <td class="num">22.5M</td>
+                  <td class="num">13.6M</td>
+                  <td class="num">10.2M</td>
+                  <td class="num">3.4M</td>
+                  <td class="num">3.85M</td>
+                  <td class="num">1.1M</td>
+                  <td>התקנות ראשונות מוכיחות margin, SLA ו־collection rhythm בלי לנפח payroll.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q3</strong></td>
+                  <td class="num">32.5M</td>
+                  <td class="num">22.4M</td>
+                  <td class="num">16.3M</td>
+                  <td class="num">6.1M</td>
+                  <td class="num">4.90M</td>
+                  <td class="num">0.4M</td>
+                  <td>קבלני משנה לפי חוזה, O&M desk קטן; microgrid רק עם LOI ברור.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q4</strong></td>
+                  <td class="num">40.0M</td>
+                  <td class="num">33.7M</td>
+                  <td class="num">23.3M</td>
+                  <td class="num">10.4M</td>
+                  <td class="num">6.09M</td>
+                  <td class="num">0.0M</td>
+                  <td>העסק עובר לאיזון חודשי אם תנאי תשלום ו־COGS נשמרים.</td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>Year 1</strong></td>
+                  <td class="num">102.6M</td>
+                  <td class="num">71.9M</td>
+                  <td class="num">51.2M</td>
+                  <td class="num">20.7M</td>
+                  <td class="num">18.42M</td>
+                  <td class="num">6.3M</td>
+                  <td>Lower legal/logistics ops lowers the cash gap to about 4.0M THB before working capital.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="timeline" aria-label="גרף הכנסות חודשי">
+            <div class="timeline-row">
+              <b>M1</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 1.4%"></div></div>
+              <span>0.2M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M2</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 4.3%"></div></div>
+              <span>0.6M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M3</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 10%"></div></div>
+              <span>1.4M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M4</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 23%"></div></div>
+              <span>3.2M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M5</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 34%"></div></div>
+              <span>4.8M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M6</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 40%"></div></div>
+              <span>5.6M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M7</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 49%"></div></div>
+              <span>6.8M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M8</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 51%"></div></div>
+              <span>7.2M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M9</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 60%"></div></div>
+              <span>8.4M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M10</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 66%"></div></div>
+              <span>9.2M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M11</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 75%"></div></div>
+              <span>10.5M</span>
+            </div>
+            <div class="timeline-row">
+              <b>M12</b>
+              <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+              <span>14.0M</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="decisions">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <span class="kicker">05 · Management gates</span>
+              <h2>שלוש החלטות ששומרות על השנה.</h2>
+            </div>
+            <p class="section-note">
+              אם שומרים על שלושת השערים האלה, התוכנית נשארת גמישה: אפשר להאיץ כשהחוזים מחזיקים, ואפשר לעצור גיוס/מלאי לפני
+              שהחברה שורפת כסף על נפח שלא נסגר.
+            </p>
+          </div>
+
+          <div class="gate-grid">
+            <article class="gate">
+              <h3>1. Payroll עולה רק אחרי revenue visibility</h3>
+              <p>להתחיל 3-4 אנשים, לעלות ל־4-6 רק אחרי פיילוטים חתומים, ל־6-8 אחרי גבייה חוזרת, ול־8-10 בסוף שנה רק אם יש backlog שמכסה שני חודשי payroll קדימה.</p>
+              <span class="tag">Hiring gate</span>
+            </article>
+            <article class="gate">
+              <h3>2. כל פרויקט נסגר עם deposits ומיילסטונים</h3>
+              <p>אין הזמנת ציוד כבד בלי payment schedule. היעד הוא supplier deposits מול customer deposits, ולא מלאי panels גדול על חשבון החברה.</p>
+              <span class="tag">Cash gate</span>
+            </article>
+            <article class="gate">
+              <h3>3. Microgrid ו־solar field לא נכנסים ל־P&L לפני חתימה</h3>
+              <p>להציג אותם כ־development pipeline בלבד עד שיש anchor LOI, offtaker route, grid pre-check ומבנה SPV/מימון ברור.</p>
+              <span class="tag">Project gate</span>
+            </article>
+          </div>
+
+          <p class="source-note">
+            מקורות פנימיים: `bangkok-meeting-plan.html`, `bangkok-energy-platform-he.html`, `practical-workplan.html`
+            ו־BOI business plan. המספרים הם טווחי עבודה לתיקוף מול חשבונות PEA, סקרי גג, מחירוני ספקים, רישוי מקומי ותנאי
+            מימון. Cash-in כאן מייצג גבייה / milestone revenue לתכנון תזרים, לא דוח חשבונאי חתום.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <img src="bustan-energy-logo.png" alt="Bustan Energy" />
+        <p>
+          Bustan Energy / בוסתן אנרג׳י · תקציר פנימי לשנה ראשונה · עודכן ביוני 2026. המסמך מיועד לקבלת החלטת תקציב,
+          לא כהצעה ללקוח או תחזית audited.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
